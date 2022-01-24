@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="L9HrjL" name="NIME2022 - Instrument 1" projectType="guiapp"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
+              jucerFormatVersion="1">
+  <MAINGROUP id="VcD5hG" name="NIME2022 - Instrument 1">
+    <GROUP id="{7F6ECACB-031A-7B63-1AD1-9F0D1E228886}" name="Source">
+      <FILE id="TbC6MX" name="Wavetable_Exciter.h" compile="0" resource="0"
+            file="Source/Wavetable_Exciter.h"/>
+      <FILE id="ENiGPO" name="SenselWrapper.h" compile="0" resource="0" file="Source/SenselWrapper.h"/>
+      <FILE id="uNRnGs" name="Buffer.hpp" compile="0" resource="0" file="Source/Buffer.hpp"/>
+      <FILE id="hgNrPc" name="Cartisian_Grid.hpp" compile="0" resource="0"
+            file="Source/Cartisian_Grid.hpp"/>
+      <FILE id="N5TuwG" name="FDTD_Accelerated.hpp" compile="0" resource="0"
+            file="Source/FDTD_Accelerated.hpp"/>
+      <FILE id="BqSb7N" name="FDTD_Grid.hpp" compile="0" resource="0" file="Source/FDTD_Grid.hpp"/>
+      <FILE id="sEYDGe" name="glad.c" compile="1" resource="0" file="Source/glad.c"/>
+      <FILE id="CiDaTF" name="Visualizer.hpp" compile="0" resource="0" file="Source/Visualizer.hpp"/>
+      <FILE id="UQUjmV" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="eO5eI1" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="IKAIoW" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019" externalLibraries="../../third_party">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Use_case_001" libraryPath="../../third_party"
+                       headerPath="../../third_party"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Use_case_001" libraryPath="../../third_party"
+                       headerPath="../../third_party"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/JUCE/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/JUCE/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <VS2017 targetFolder="Builds/VisualStudio2017" extraLinkerFlags="glfw3.lib&#10;opengl32.lib&#10;OpenCL.lib&#10;LibSensel.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="../../third_party/include"
+                       libraryPath="../../third_party/lib"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="../../third_party/include"
+                       libraryPath="../../third_party/lib"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
